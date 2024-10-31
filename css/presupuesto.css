@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para asegurarse de que el body ocupe al menos el 100% de la altura de la ventana */
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
+    background-color: #7a1f1f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/* Estilo del logo */
+.logo img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Estilos del nav */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #1f7a1f;
+}
+
+nav ul li a.activo {
+    background-color: #1f7a1f;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilo del main con grid */
+main {
+    flex: 1; /* Para ocupar el espacio restante */
+    display: grid;
+    place-items: center; /* Centra el contenido en el main */
+}
+
+/* Estilo de la sección presupuesto */
+.presupuesto {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.presupuesto h2 {
+    color: #7a1f1f;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input::placeholder {
+    color: #cccccc;
+    opacity: 1;
+}
+
+a {
+    color: #7a1f1f;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #1f7a1f;
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #7a1f1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #1f7a1f;
+    outline: 2px solid #1f7a1f;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #1f7a1f;
+}
+
+footer p {
+    color: white;
+}
+
+.contact-info {
+    color: white;
+    margin: 5px 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: filter 0.3s;
+    filter: none;
+}
+
+.social-media a:hover img {
+    filter: none;
+}
